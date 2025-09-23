@@ -5,7 +5,7 @@ platform :android do
       package_name: "com.goal.master.league1",       # Bundle-ID створеного в консолі андроїд додатку
       aab: "build_output/Goal_Master_League_2.aab", # шлях до aab після завантаження його туди у workflow з GitHub Releases
       track: "internal",
-      release_status: "completed",                 # обов’язково, щоб реліз став видимий
+      release_status: "draft",                 # обов’язково, щоб реліз став видимий
       skip_upload_changelogs: false,
       skip_upload_images: true,
       skip_upload_screenshots: true,
