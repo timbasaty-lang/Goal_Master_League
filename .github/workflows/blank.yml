@@ -15,8 +15,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p build_output
-          gh release download 2.0.0 \
-            --pattern "Goal_Master_League_2.aab" \
+          gh release download 3.0.0 \
+            --pattern "Goal_Master_League_3.aab" \
             --dir build_output
 
       - name: Setup Ruby
