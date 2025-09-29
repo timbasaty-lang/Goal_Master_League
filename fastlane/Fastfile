@@ -3,9 +3,11 @@ platform :android do
     supply(
       json_key_data: ENV["GOOGLE_PLAY_JSON_KEY"], # або замість ENV — просто шлях до створеного JSON-файлу з ключем від Google Cloud Console
       package_name: "com.goal.master.league1",       # Bundle-ID створеного в консолі андроїд додатку
-      aab: "build_output/Goal_Master_League_2.aab", # шлях до aab після завантаження його туди у workflow з GitHub Releases
-      track: "internal",
-      release_status: "draft",                 # обов’язково, щоб реліз став видимий
+      aab: "build_output/Goal_Master_League_3.aab", # шлях до aab після завантаження його туди у workflow з GitHub Releases
+     track: "alpha", # или closed, если трек существует
+      release_status: "draft",                 # 🚀 только draft для чернового приложения
+      track_promote_release_status: "draft",   # 🚨 добавь это обязательно
+      changes_not_sent_for_review: true,       # 🚨 и это тоже
       skip_upload_changelogs: false,
       skip_upload_images: true,
       skip_upload_screenshots: true,
