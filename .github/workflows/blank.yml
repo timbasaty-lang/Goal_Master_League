@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Download AAB from GitHub Release
         env:
@@ -16,7 +16,7 @@ jobs:
         run: |
           mkdir -p build_output
           gh release download 3.0.0 \
-            --pattern "Goal_Master_League_3.aab" \
+            --pattern "Goal_Master_League_5.aab" \
             --dir build_output
 
       - name: Setup Ruby
