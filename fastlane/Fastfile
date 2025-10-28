@@ -4,7 +4,7 @@ platform :android do
       json_key_data: ENV["GOOGLE_PLAY_JSON_KEY"],
       package_name: "com.goal.master.league1",
 
-      aab: "build_output/Goal_Master_League_3.aab",
+      aab: "build_output/Goal_Master_League_5.aab",
 
       track: "production",          # ✅ Прод-релиз
       release_status: "draft",  # ✅ Завершённый релиз, сразу публикуется после модерации
