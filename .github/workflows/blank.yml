@@ -15,7 +15,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p build_output
-          gh release download 3.0.0 \
+          gh release download 5.0.0 \
             --pattern "Goal_Master_League_5.aab" \
             --dir build_output
 
